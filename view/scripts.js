@@ -7,7 +7,7 @@ LA BATAILLE NAVALE.
     
     //add arguments for to choose table.
     function createTable(num) {
-	let table = document.querySelector(".table" + num);
+        let table = document.querySelector(".table" + num);
 	for(let x = 0; x < 10; x++) {
 	let tr = document.createElement("tr");
 	//css.
@@ -26,6 +26,9 @@ LA BATAILLE NAVALE.
 // ON CLICK ACTIVE COLOR.
 
     function onclickColor() {
+        //stock the values.
+        let stockage = [];
+        //Select for event
         let select = document.querySelectorAll("td");
         for( let position of select) {
             position.addEventListener('click', function() {
@@ -35,9 +38,10 @@ LA BATAILLE NAVALE.
                 }else {
                     position.style.backgroundColor = "red";
                     position.style.color = "white";
-                    
+                    //When on click, regroup value in tab stock.
+                    stockage.push(position.textContent);
+                    console.log(stockage);
                 }
-               
             });
         }
     }
