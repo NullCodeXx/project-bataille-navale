@@ -18,6 +18,19 @@ LA BATAILLE NAVALE.
 	}
 }
 
+function css() {
+        let table = document.querySelector("td");
+        table.style.backgroundColor = "red";
+}
+// //MODIF DISPLAY.
+// function displayChange() {
+// 	let tr = document.querySelectorALL(tr);
+// 	let td = document.querySelectorALL(td);
+// 	tr.classList.add(".table-tr");
+// 	td.classList.add(".table-td");
+// }
+
+
 
 
 
