@@ -7,9 +7,15 @@
     }
 
 .table-tr {
-    color: blue;
+    height: 40px;
+    width: 40px;
+    color: red;
+    background-color: black; 
 }
 
 .table-td {
-    color: lightblue;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    color: lime;
 }
