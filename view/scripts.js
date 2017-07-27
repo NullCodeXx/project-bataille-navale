@@ -26,21 +26,23 @@ LA BATAILLE NAVALE.
 // ON CLICK ACTIVE COLOR.
 
     function onclickColor() {
-        //stock the values.
-        let stockage = [];
+        //stock the values in object in tableau.
+        let stockInObject = new Object();
+        let object = []; 
         //Select for event
         let select = document.querySelectorAll("td");
         for( let position of select) {
             position.addEventListener('click', function() {
-                if ( position.style.backgroundColor == "red") {
+                if (position.style.backgroundColor == "red") {
                     position.style.backgroundColor = "";
                     position.style.color = "";
                 }else {
                     position.style.backgroundColor = "red";
                     position.style.color = "white";
                     //When on click, regroup value in tab stock.
-                    stockage.push(position.textContent);
-                    console.log(stockage);
+                    object.push(position.textContent);
+                    stockInObject = object;
+                    console.log(stockInObject);
                 }
             });
         }
