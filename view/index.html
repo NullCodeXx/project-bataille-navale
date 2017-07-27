@@ -4,18 +4,40 @@
 <meta charset="UTF-8"/>
 <title>Jeu de bataille navale</title>
 <meta name="description" content="Un jeu de bataille navale programmé en JavaScript."/>
-<script src="scripts.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" href="style.css">
+<script src="scripts.js"></script>
+
+
 </head>
 <body>
-	<h1>LA BATAILLE NAVALE</h1>
-	 <!-- Table de case de la bataille navale -->
-	<table class="table" border="1">
-	</table>
-
+    <main>
+        <section class="row">
+           
+            <div class="col-md-5 col-md-offset-1">
+                 <h1>LA BATAILLE NAVALE</h1>
+                  <!-- Table de case de la bataille navale -->
+                  <table class="tablea" border="1"></table>
+            </div>
+            
+            <div class="col-md-5 col-md-offset-1">
+                 <h1>LA BATAILLE NAVALE</h1>
+                  <!-- Table de case de la bataille navale -->
+                  <table class="tableb" border="1"></table>
+            </div>
+            
+        </section>
+        
+	
+    </main>
+	
 	<script>
-		// Call to function.
-		createTable();
+		// Call to function + argument give table class.
+		createTable("a");
+                //2 éme tableau
+                createTable("b");
+                //On click change color.
+                onclickColor()
 	</script>
 </body>
 </html>
