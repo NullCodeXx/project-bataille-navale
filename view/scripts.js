@@ -39,6 +39,7 @@ LA BATAILLE NAVALE.
                 }else {
                     position.style.backgroundColor = "white";
                     position.style.color = "#000";
+                    position.style.fontWeight =  "900";
                     //When on click, regroup value in tab stock.
                     object.push(position.textContent);
                     stockInObject = object;
