@@ -33,12 +33,12 @@ LA BATAILLE NAVALE.
         let select = document.querySelectorAll("td");
         for( let position of select) {
             position.addEventListener('click', function() {
-                if (position.style.backgroundColor == "red") {
+                if (position.style.backgroundColor == "white") {
                     position.style.backgroundColor = "";
                     position.style.color = "";
                 }else {
-                    position.style.backgroundColor = "red";
-                    position.style.color = "white";
+                    position.style.backgroundColor = "white";
+                    position.style.color = "#000";
                     //When on click, regroup value in tab stock.
                     object.push(position.textContent);
                     stockInObject = object;

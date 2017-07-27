@@ -55,4 +55,11 @@ class Boats {
     function getArmement() {
         return $this->armement;
     }
+    
+    function displayEvent() {
+        return '<div>' . $this->ammunition . '</div>' . '<div>' . $this->armement . '</div>'
+            . '<div>' . $this->life . '</div>' . '<div>' . $this->marque . '</div>'
+                .'<div>' . $this->pays . '</div>' . '<div>' . $this->power . '</div>'
+                . '<div>' . $this->pseudo . '</div>';
+    }
 }
