@@ -45,9 +45,30 @@ h1 {
     margin-left: 37%;
 }
 
-table  {
-    border: 5px solid  lime;
-    }
+#table {
+            border: 5px solid  lime;
+            animation: eventjs 0.1s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes eventjs {
+            0% {
+                border: 5px solid lime;
+            }
+            25% {
+                border: 5px solid blue;
+            }
+            50% {
+                border: 5px solid red;
+            }
+            75% {
+                border: 5px solid yellow;
+            }
+            100% {
+                border: 5px solid white;
+            }
+        }
 
 .table-tr {
     height: 40px;
