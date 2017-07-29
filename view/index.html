@@ -6,14 +6,14 @@
 <meta name="description" content="Un jeu de bataille navale programmé en JavaScript."/>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 <link rel="stylesheet" href="style.css">
-<script src="scripts.js"></script>
+ <script src="../script/script.js"></script> 
 
 
 </head>
 <body>
     <main>
-            <audio src="content/lagon.mp3"></audio>
-
+            <!-- <audio src="../content/lagon.mp3" controls="" loop="" autoplay="">Sons</audio> -->
+            <button class='music'>Play music</button>
         <section class="row">
             
             <div class="col-md-5 col-md-offset-1">
@@ -43,10 +43,10 @@
 	<script>
 		// Call to function + argument give table class.
 		createTable("a", "#fff");
-                //2 éme tableau
-                createTable("b", "blue");
-                //On click change color.
-                onclickColor(0);
+        //2 éme tableau
+        createTable("b", "blue");
+        //On click change color.
+        onclickColor(0);
 </script>
 
 

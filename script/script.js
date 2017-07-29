@@ -3,6 +3,13 @@
 LA BATAILLE NAVALE.
 */
 
+//ADD SOUND FULL JS.
+let sound = new Audio("../content/lagon.mp3");
+sound.autoplay = true;
+sound.loop = true;
+sound.volume = 0.4;
+
+
 // CREATE TABLE IN JAVA SCRIPT.
     
     //add arguments for to choose table.
