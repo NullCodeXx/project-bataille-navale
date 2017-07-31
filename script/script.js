@@ -7,7 +7,7 @@ LA BATAILLE NAVALE.
 let sound = new Audio("../content/lagon.mp3");
 sound.autoplay = true;
 sound.loop = true;
-sound.volume = 0.4;
+sound.volume = 1;
 
 
 // CREATE TABLE IN JAVA SCRIPT.
@@ -55,3 +55,8 @@ sound.volume = 0.4;
             });
         }
     }
+
+    //ASSIGN KEY PRESS (KEYBOARD).
+
+    let key = event.key;
+    console.log(key);
